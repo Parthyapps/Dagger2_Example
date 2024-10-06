@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputField"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:text="Save"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/getBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/outputField"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:text="Show"
+        android:textColor="#ffffff" />
+
+    <!--For input we have used EditText-->
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Input Data"
+        android:textAlignment="center" />
+
+    <!--For output we have used TextView-->
+    <TextView
+        android:id="@+id/outputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveBtn"
+        android:layout_margin="8dp"
+        android:hint="Output Data"
+        android:textAlignment="center" />
+
+</RelativeLayout>
